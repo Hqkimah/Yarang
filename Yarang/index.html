@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="img1" sizes="180x180" href="img/img1.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/img1.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/img1.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'>
+    <!--navbar-->
+    <nav class="navbar glass" style="height: 70px;">
+        <span><a href="#home" style="display:flex; align-items: center;"><img class="img1" src="img/remove bg.png" width="80"
+            style="margin: -25px -10px -25px -20px"><h1 class="logo">&nbsp;Yarang</h1></a></span>
+        <ul class="nav-links">
+            <li><a href="#home" id="pri" class="active cir_border">หน้าหลัก</a></li>
+            <li><a href="#events"  id="sec" class="cir_border">สถานที่ท่องเที่ยว</a></li>
+            <li><a href="#about" id="quad" class="cir_border">ผลิตภัณฑ์</a></li>
+            <li><a href="#contact" id="hex" class="cir_border">เกี่ยวกับเรา</a></li>
+            <li><div>
+                <input type="checkbox" class="checkbox dark" id="checkbox">
+              <label for="checkbox" class="label">
+                <i class="fa fa-moon-o"></i>
+                <i class='fa fa-sun-o'></i>
+                <div class='ball'>
+              </label>
+            </div></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--navbar-->
+
+    <header id="home">
+        <div class="header-content">
+            <h2  id="quote">WELCOME TO YARANG</h2>
+            <div class="line"></div>
+            <h1 >ยินดีต้อนรับสู่ตำบลยะรัง </h1>
+            <a href="#about" class="ctn" onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'>Learn more</a>
+        </div>
+    </header>
+
+    <!--Events-->
+    <section class="events" id="events">
+        <div class="container">
+        <div class="title">
+            <h1 class="dark">สถานที่ท่องเที่ยว</h2>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <article class="card col">
+                <img class="card-img" src="./img/img3.png">
+                <h4 class="dark">เมืองโบราณยะรัง</h4>
+                <p class="font-color">เมืองโบราณยะรัง อายุ 1,000 ปี ที่ตั้ง หมู่ 3 ตำบลยะรัง อำเภอยะรัง จังหวัดปัตตานี 94160</p>
+                <a href="#" class="ctn">ข้อมูลเพิ่มเติม</a>
+            </article>
+            <br>
+            <br>
+            <br>
+            <article class="card col">
+                <img src="./img/img5.png">
+                <h4 class="dark">ดงต้นหยี</h4>
+                <p class="font-color">สวนดงต้นหยี  บ้านปูลาตะเยาะฆอ หมู่ที่ 5 ตำบลระแว้ง อำเภอยะรัง จังหวัดปัตตานี 94160</p>
+                <a href="#" class="ctn">ข้อมูลเพิ่มเติม</a>
+            </article>
+            <br>
+            <br>
+            <br>
+            <article class="card col">
+                <img src="./img/img10.jpg">
+                <h4 class="dark">สะพานสลิง</h4>
+                <p class="font-color">สะพานสลิงบ้านยือแร บ้านยือแร หมู่ 3 ตำบลยะรัง อำเภอยะรัง จังหวัดปัตตานี 94160</p>
+                <a href="#" class="ctn">ข้อมูลเพิ่มเติม</a>
+            </article>
+           
+        </div>
+    </div>
+    </section>
+    <br>
+    <!--Events-->
+
+    
+    <!--Explore--
+     <section class="explore" id="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>“Travel makes one modest. You see what a tiny place you occupy in the world.”– Gustav Flaubert
+            </br>Exploring will make you want to pack your bag, book that ticket and jet away. </p>
+            <a href="#" class="ctn">Explore more</a>
+        </div>
+    </section>
+    <!--Explore-->
+
+    <!--tours-->
+    <section class="tours">
+        <div class="container row">
+            <div class="col content-col">
+                <h1 class="font-color">...</h1>
+                <div class="line"></div>
+                <p>Wed 28 sept 2023 : Port of Spain City Tour and Birdseye Fort View. </br>
+                   Sat 1 oct 2023 : Tour the Gasparee Caves.</br>
+                   Tues 4 oct 2023 : Trinidad North Coast Experience. </br> 
+                    and many more ......
+                 </p>
+                <a href="#" class="ctn">ข้อมูลเพิ่มเติม</a>
+            </div>
+            <div class="image-col">
+                <div class="image-gallery">
+                    <img src="./img/img3.png" alt="">
+                    <img src="./img/img4.png" alt="">
+                    <img src="./img/img5.png" alt="">
+                    <img src="./img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </section>
+    <!--tours-->
+
+    <!-- About ผลิตภัณฑ์ -->
+    <section id="about">
+        <div class="title">
+            <h1 class="font-color">ผลิตภัณฑ์</h1>
+            <div class="line"></div>
+        </div>
+        <br>
+        <div id="about_us">
+            <div class="boxx">
+                <div class="containerx">
+					<input type="radio" name="slider" id="item-1" checked>
+					<input type="radio" name="slider" id="item-2">
+					<input type="radio" name="slider" id="item-3">
+				  <div class="cards">
+					<label class="cardt" for="item-1" id="col-img-1">
+					  <img src="./img/img4.png">
+					</label>
+					<label class="cardt" for="item-2" id="col-img-2">
+					  <img src="./img/img7.jpg">
+					</label>
+					<label class="cardt" for="item-3" id="col-img-3">
+					  <img src="./img/img8.jpg">
+					</label>
+				  </div>
+				</div>
+                <span id="about-quad"><a href="#home"><center><h1 style="font-family: var(--ff-montserrat); color: white;">ผลิตภัณฑ์</h1><br><img class="img2" src="./img/mountain_dark.jpg" width="200" style="border-radius: 12%;"><br><h1 class="logo" style="font-size: 50px;">PRODUCT</h1></a></center></span>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="title">
+            <h1 class="font-color">เกี่ยวกับเรา</h1>
+            <div class="line"></div>
+        </div>
+        <div class="contact_us">
+            <form class="cform" action="" method="post">
+                <div class="crow-message">
+                    <h1 class="color">สอบถามเพิ่มเติม</h1>
+                    <div></div>
+                </div>
+                <div class="crow-in">
+                        <input type="text" id="name" name="name" placeholder="ชื่อ-นามสกุล">
+                        <input type="text" id="email" name="email" placeholder="E-mail">
+                </div>
+                <div class="crow">
+                    <div class="ccol-left">
+                        <select name="country" id="country">
+                            <option value="India">ไทย</option>
+                            <option value="Russia">Malaysia</option>
+                            <option value="usa">USA</option>
+                            <option value="Japan">Arabic</option>
+                            <option value="France">France</option>
+                            <option value="Brazil">Brazil</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="crow">
+                    <div class="ccol-left">
+                        <textarea type="text" id="remarks" name="remarks" placeholder="ข้อความ....." style="height: 150px;"></textarea>
+                    </div>
+                </div>
+                <input class="crow-s" type="submit" value="ส่ง">
+            </form>
+            <div class="cbox">
+                <div>
+                    <p class="cbox-message">YARANG<br>" โครงการวิจัยภายใต้ชุดวิชาโครงงาน มหาวิทยาลัยฟาฏอนี ตำบลเขาตูม อำเภอยะรัง จังหวัดปัตตานี 94160 "</p>
+                    <br>ภายใต้หัวข้อ " การพัฒนาการท่องเที่ยวเชิงวัฒนธรรมยะรังด้วยแนวคิด Metaverse"</p>
+                <div class="cbox-line"></div>
+                </div>
+                <div class="c_boxx">
+                    <a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i>
+                        อีเมลล์: 622431008@ftu.ac.th
+                    </a>
+                </div>
+                <div class="c_boxx">
+                    <a href="tel:+91-12345-67890"><i class="fa fa-phone"></i>
+                       โทรศัพท์: 065-0694145
+                    </a>
+                </div>
+                <div class="c_boxx">
+                    <a href="#"><i class="fa fa-map-marker"></i>
+                        สถานที่: ต.เขาตูม อ.ยะรัง จ.ปัตตานี
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact  -->
+    <!-- up scroll -->
+    <i class="fa fa-chevron-up" onclick="topFunction()" id="upbtn"></i>
+    <!-- end -->
+    <!--footer-->
+    <section class="footer">
+        <span>Created By Hakeemah & Nureesan | &#169 2023 All rights reserved.</span>
+        <div class="social">
+            <li>
+                <a href="https://pritam-sarbajna-portfolio.netlify.app/" target="_blank" rel="noreferrer"><i class="fa fa-globe"></i></a>
+                <a href="https://github.com/Hqkimah" target="_blank" rel="noreferrer"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pritam-sarbajna-74945821b/" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+            </li>
+        </div>
+    </section>
+    <!--footer-->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
